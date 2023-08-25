@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,14 +12,10 @@
     grid-template-columns: 1fr;
    }  
 
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
-
-
-@media screen and (min-width:320px){
+@media screen and (max-width:480px){
    .heading{
         text-transform: uppercase;
-        font-family: 'Big Shoulders Display', sans-serif;
+        font-family: 'Big Shoulders Display';
         font-size: 60px;
         font-weight: 900;
     }
@@ -30,21 +29,30 @@
         }
 
     .large{
-        font-size: 55px;
+        font-size: 50px;
         color: #FFFFFF;
     }
 
     .bodytext{
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Outfit';
         font-size: 18px;
+    }
+
+    .middle{
+        color:#FFFFFF;
+        font-size: 18px;
+        font-weight: 300;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .addresstext{
         color: #D5966C;
-        font-family: 'Big Shoulders Display', sans-serif;
+        font-family: 'Big Shoulders Display';
         text-transform: uppercase;
         font-size: 32px;
         font-weight: 900;
+        padding-bottom: 1rem;
     }
 
     .tiny{
@@ -52,31 +60,110 @@
         }
 
    body{
-    background-color: blue;
-   }
+        background-color: #151515;
+    }
 
    .idle-button{
-    background-color: #151515;
-    text-transform: uppercase;
-    color: white;
-    font-family: 'Big Shoulders Display', sans-serif;
-    font-size: 20px;
-    padding: 2rem;
-    }
+        background-color: #151515;
+        text-transform: uppercase;
+        color: white;
+        font-family: 'Big Shoulders Display';
+        font-size: 20px;
+        padding: 2rem;
+        }
 
     .arrow{
         background-color: #D5966C;
         padding: 2rem;
         }
 
+    .map{
+        
+        width: 100%;  
+    }
+
+    .location-grid{
+        grid-template-columns: 2fr;
+    }
+
+    
+
+    .location-grid div:nth-child(2){
+        background-color:#151515;
+        justify-items: center;
+        padding: 1rem;
+    }  
+
+    .location-grid div:nth-child(3){
+        background-color:#151515;
+        justify-items: center;
+        padding: 1rem;
+    }  
+
+
+    .location-grid div:first-child {
+        grid-column: 1/2;
+    } 
+     
+    
+    .location-grid div:last-child{
+        background-color:#D5966C;
+        padding: 2rem;
+    } 
+
+    .maplocation{
+        position: relative;
+    }
+
+    .arrow{
+        position: absolute;
+        top: 1px;
+        left: 15px
+    }
+
+    .idle-button{
+        position: absolute;
+        top: 1px;
+        left: 80px;
+    }
+
+    .tiniest{
+        padding-top: 2rem;
+        /* padding-bottom: 2rem; */
+    }
+    
+    .socialmedia{
+        margin: 5px 0 0 -30px;
+        display: flex;
+       
+    } 
+
+    .socialmedia svg{
+        height: 20px;
+        width: 20px;
+        margin-right: 20px;
+        
+           }
+
+    .socialmedia img:hover{
+        cursor: pointer;
+    }
+
+    svg path:hover{
+        fill:#FFFFFF;
+        cursor: pointer;
+        transition: background 500ms ease;
+    }
+
+
 }
 
 
 
-@media screen and (min-width:481px){
+@media screen and (max-width:1024px) and (min-width:500px){
     .heading{
         text-transform: uppercase;
-        font-family: 'Big Shoulders Display', sans-serif;
+        font-family: 'Big Shoulders Display';
         font-size: 70px;
         font-weight: 900;
 
@@ -96,16 +183,25 @@
     }
     
     .bodytext{
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Outfit';
+        font-size: 25px;
+    }
+
+    .middle{
+        color:#FFFFFF;
         font-size: 18px;
+        font-weight: 300;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .addresstext{
         color: #D5966C;
-        font-family: 'Big Shoulders Display', sans-serif;
+        font-family: 'Big Shoulders Display';
         text-transform: uppercase;
         font-size: 32px;
         font-weight: 900;
+        padding-bottom: 1rem;
     }
 
     .tiny{
@@ -113,27 +209,116 @@
     }
 
     body{
-        background-color: crimson;
+        background-color: #151515 
     }
 
     .idle-button{
         background-color: #151515;
         text-transform: uppercase;
         color: white;
-        font-family: 'Big Shoulders Display', sans-serif;
+        font-family: 'Big Shoulders Display';
         font-size: 20px;
-        padding: 2rem;
+        padding: 1rem;
     }
     .arrow{
         background-color: #D5966C;
-        padding: 2rem;
+        padding: 1rem;
     }
+
+    .map{
+        object-fit: cover;
+        width: 100%;
+        
+    
+    }
+
+    /* .location-grid{
+        grid-template-columns: 4fr 2fr;
+    } */
+
+   
+
+    .location-grid div:nth-child(2){
+        background-color:#151515;
+        justify-items: center;
+        padding: 3rem;
+    }  
+
+    .location-grid div:nth-child(3){
+        background-color:#151515;
+        justify-items: center;
+        padding: 3rem;
+    }  
+
+
+    .location-grid div:first-child {
+        grid-column: 1/4;
+    }
+   
+    
+    .location-grid div:last-child{
+        background-color:#D5966C;
+        grid-column: 1 / 4;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        padding-top: 1rem;
+        padding-right: 0.2rem;
+    } 
+
+    .maplocation{
+        position: relative;
+    }
+
+    .arrow{
+        position: absolute;
+        top: 1px;
+        left: 105px
+    }
+
+    .idle-button{
+        position: absolute;
+        top: 1px;
+        left: 140px;
+    }
+
+    .tiniest{
+        padding-left: 4rem;
+        padding-right: 5rem;
+        padding-top: 1rem;
+        
+    }
+
+    
+    .socialmedia{
+        margin: 0;
+        display: flex;
+    } 
+
+    .socialmedia svg{
+        height: 20px;
+        width: 20px;
+        margin-right: 20px;
+        
+    }
+
+    .socialmedia img:hover{
+        cursor: pointer;
+    }
+
+    svg path:hover{
+        fill: #D5966C;
+        cursor: pointer;
+        transition: background 500ms ease;
+    }
+
+
 }
 
 @media screen and (min-width:1025px){
     .heading{
         text-transform: uppercase;
-        font-family: 'Big Shoulders Display', sans-serif;
+        font-family: 'Big Shoulders Display';
         font-size: 96px;
         font-weight: 900;
     
@@ -153,7 +338,7 @@
     }
     
     .bodytext{
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Outfit';
         font-size: 22px;
     }
 
@@ -167,7 +352,7 @@
 
     .addresstext{
         color: #D5966C;
-        font-family: 'Big Shoulders Display', sans-serif;
+        font-family: 'Big Shoulders Display';
         text-transform: uppercase;
         font-size: 36px;
         font-weight: 900;
@@ -186,7 +371,7 @@
         background-color: #151515;
         text-transform: uppercase;
         color: white;
-        font-family: 'Big Shoulders Display', sans-serif;
+        font-family: 'Big Shoulders Display';
         font-size: 20px;
         padding: 2rem;
     }
@@ -211,13 +396,13 @@
     .location-grid div:nth-child(2){
         background-color:#151515;
         justify-items: center;
-        padding: 5rem;
+        padding: 3rem;
     }  
 
     .location-grid div:nth-child(3){
         background-color:#151515;
         justify-items: center;
-        padding: 5rem;
+        padding: 3rem;
     }  
 
 
@@ -231,7 +416,7 @@
         grid-column: 1 / 4;
         display: flex;
         justify-content: space-between;
-        padding: 5rem;
+        padding: 3rem;
     } 
 
     .maplocation{
@@ -239,24 +424,48 @@
     }
 
     .arrow{
-        position: absolute;
-        top: 1px;
-        left: 105px
+        position:absolute; 
+        top: 0px;
+        left: 100px;
     }
 
     .idle-button{
-        position: absolute;
-        top: 1px;
-        left: 170px;
+        position:absolute; 
+        top: 0px;
+        left: 150px;
     }
 
     .tiniest{
         justify-content: center;
         justify-items: center;
         padding-left: 14rem;
-        padding-right: 26rem;
+        padding-right: 15rem;
         align-items: center;
+        margin-top: 2rem;
     }
+
+    .socialmedia{
+        /* margin: 0 0 0 35px; */
+        display: flex;
+    } 
+
+    .socialmedia svg{
+        height: 20px;
+        width: 20px;
+        margin-right: 20px;
+        /* padding-top: 1rem; */
+    }
+
+    .socialmedia img:hover{
+        cursor: pointer;
+    }
+
+    svg path:hover{
+        fill:#FFFFFF;
+        cursor: pointer;
+        transition: background 500ms ease;
+    }
+
 
 
 }
