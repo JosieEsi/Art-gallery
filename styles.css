@@ -69,13 +69,31 @@
         color: white;
         font-family: 'Big Shoulders Display';
         font-size: 20px;
-        padding: 2rem;
-        }
+        padding: 24px;
+        position: absolute;
+        top: 0px;
+        left: 50px;
+        border: 0 solid #151515;
+    }
 
     .arrow{
         background-color: #D5966C;
-        padding: 2rem;
-        }
+        padding: 24px;
+        position: absolute;
+        top: 0px;
+        left: -50px;
+    }
+
+    .idle-button:hover, .idle-button:active{
+        cursor: pointer;
+        background-color: #D5966C;
+        border: 0 solid #D5966C;
+    }
+
+    .arrow:hover{
+        background-color:#151515;
+        cursor: pointer;
+    }
 
     .map{
         
@@ -113,18 +131,6 @@
 
     .maplocation{
         position: relative;
-    }
-
-    .arrow{
-        position: absolute;
-        top: 1px;
-        left: 15px
-    }
-
-    .idle-button{
-        position: absolute;
-        top: 1px;
-        left: 80px;
     }
 
     .tiniest{
@@ -219,10 +225,28 @@
         font-family: 'Big Shoulders Display';
         font-size: 20px;
         padding: 1rem;
+        border: 0 solid #151515;
+        position: absolute;
+        top: 0px;
+        left: 80px;
     }
     .arrow{
         background-color: #D5966C;
         padding: 1rem;
+        position: absolute;
+        top: 0px;
+        left: -40px
+    }
+
+    .idle-button:hover, .idle-button:active{
+        cursor: pointer;
+        background-color: #D5966C;
+        border: 0 solid #D5966C;
+    }
+
+    .arrow:hover{
+        background-color:#151515;
+        cursor: pointer;
     }
 
     .map{
@@ -231,12 +255,6 @@
         
     
     }
-
-    /* .location-grid{
-        grid-template-columns: 4fr 2fr;
-    } */
-
-   
 
     .location-grid div:nth-child(2){
         background-color:#151515;
@@ -268,18 +286,6 @@
 
     .maplocation{
         position: relative;
-    }
-
-    .arrow{
-        position: absolute;
-        top: 1px;
-        left: 105px
-    }
-
-    .idle-button{
-        position: absolute;
-        top: 1px;
-        left: 140px;
     }
 
     .tiniest{
@@ -369,12 +375,25 @@
     }
     .idle-button{
         background-color: #151515;
+        border: 0 solid #151515;
         text-transform: uppercase;
         color: white;
         font-family: 'Big Shoulders Display';
         font-size: 20px;
         padding: 2rem;
     }
+
+    .idle-button:hover, .idle-button:active{
+        cursor: pointer;
+        background-color: #D5966C;
+        border: 0 solid #D5966C;
+    }
+
+    .arrow:hover{
+        background-color:#151515;
+        cursor: pointer;
+    }
+
     .arrow{
         background-color: #D5966C;
         padding: 2rem;
@@ -396,13 +415,18 @@
     .location-grid div:nth-child(2){
         background-color:#151515;
         justify-items: center;
-        padding: 3rem;
+        padding-top: 4rem;
+        padding-left: 120px;
+        padding-right: 220px;
     }  
 
     .location-grid div:nth-child(3){
         background-color:#151515;
         justify-items: center;
-        padding: 3rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-right:120px;
+        padding-left: 1rem;
     }  
 
 
@@ -417,6 +441,7 @@
         display: flex;
         justify-content: space-between;
         padding: 3rem;
+        padding-left: 120px;
     } 
 
     .maplocation{
@@ -426,20 +451,20 @@
     .arrow{
         position:absolute; 
         top: 0px;
-        left: 100px;
+        left: -70px;
     }
 
     .idle-button{
         position:absolute; 
         top: 0px;
-        left: 150px;
+        left: 100px
     }
 
     .tiniest{
         justify-content: center;
         justify-items: center;
-        padding-left: 14rem;
-        padding-right: 15rem;
+        padding-left: 8rem;
+        padding-right: 10rem;
         align-items: center;
         margin-top: 2rem;
     }
