@@ -201,6 +201,11 @@
         padding-bottom: 2rem;
     }
 
+    .arts-location{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .location-button{
         background-color: #151515;
         text-transform: uppercase;
@@ -209,6 +214,7 @@
         font-size: 20px;
         padding: 24px;
         border: 0 solid #151515;
+        position: absolute;
         
     }
 
@@ -216,9 +222,22 @@
         background-color: #D5966C;
         padding: 24px;
         position: absolute;
-        bottom: -64px;
-        right: 163px;   
+        bottom: 0px;
+        left: 150px;   
     }
+
+    .location-button:hover, .location-button:active{
+        cursor: pointer;
+        background-color: #D5966C;
+        border: 0 solid #D5966C;
+    }
+
+    .location-arrow:hover{
+        background-color:#151515;
+        cursor: pointer;
+    }
+
+
 
     .grid-1{
         margin: 16px;
@@ -435,6 +454,8 @@
         margin-bottom: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        top: 0;
+        height: 700px;
        
     }
 
@@ -448,6 +469,7 @@
         padding: 24px;
         border: 0 solid #151515;
         margin-bottom: 5rem;
+        position: absolute;
         
     }
 
@@ -455,9 +477,21 @@
         background-color: #D5966C;
         padding: 24px;
         position: absolute;
-        bottom: -52px;   
-        right: 180px;
+        bottom: 0px;   
+        right: -58px;
     }
+
+    .location-button:hover, .location-button:active{
+        cursor: pointer;
+        background-color: #D5966C;
+        border: 0 solid #D5966C;
+    }
+
+    .location-arrow:hover{
+        background-color:#151515;
+        cursor: pointer;
+    }
+    
 
     .box-1{
         padding-top: 120px;
@@ -473,7 +507,7 @@
         padding-right: 40px;
     }
 
-
+    
     .day{
         padding-right: 5rem;
         padding-bottom: 2rem;
@@ -725,39 +759,14 @@
         align-items: center;
         margin-top: 2rem;
     }
-/* 
-    .bigbox-1{
-        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        
-    } */
+   
 
-    /* .pic-1{
-        background-color: #151515;
-        height: 800px;
-        position: left;
-    }  */
-    
-    /* .pic-11{
-        background-color: #FFFFFF;
-        height: 800px;
-    }  */
+   
 
-    .hero-image{
-        background-image: url(./assets/desktop/image-hero.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 800px;   
-        width: 540px;
-        top: 0;
+    .box1{
+        height: 799px;
+        width: 450px;
         background-color: transparent;
-    }
-
-    .hero-text{
-        color:#FFFFFF;
-        padding-left: 165px;
-        padding-top: 189px;
     }
 
     .arts-location{
@@ -774,6 +783,7 @@
         font-size: 20px;
         padding: 24px;
         border: 0 solid #151515;
+        position: absolute;
         /* margin-bottom: 5rem; */
         
     }
@@ -782,7 +792,21 @@
         background-color: #D5966C;
         padding: 24px;
         position: absolute;
-        bottom: -85px;   
+        bottom: 0px;
+        right: -57px;
+
+        
+    }
+
+    .location-button:hover, .location-button:active{
+        cursor: pointer;
+        background-color: #D5966C;
+        border: 0 solid #D5966C;
+    }
+
+    .location-arrow:hover{
+        background-color:#151515;
+        cursor: pointer;
     }
 
     /* .box-1{
@@ -798,27 +822,33 @@
 
     .bigbox-1{
         height: 800px;
-        /* padding-top: 190px; */
-        /* padding-left: 165px; */
-        padding-right: 164px;
+        padding-right: 64px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 180px;
         background-color: transparent;
-        /* background-color: #151515; */
+        background-image: url(./assets/desktop/image-hero.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        top: 0;
+        
     }
-
-    /* .box-1{
-        background-color: #151515;
-        height:800px;
-
-    } */
 
     .bigbox-1 div:first-child{
         background-color: #151515;
         height:800px;
-        width:450px;
         margin: 0;
+       
+        
+    }
+
+    .hero-text{
+        color:#FFFFFF;
+        padding-top: 189px;
+        padding-bottom: 434px;
+        height: 176px;
+        grid-column: 1 / 3;
+               
     }
 
     
@@ -826,22 +856,8 @@
     .location{
         grid-column: 3 / 3;
         background-color: #FFFFFF;
+        margin-top: 64px;
     }
-
-
-
-    /* .xlarge{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        left: 0;
-    } */
-
-    /* .artsy{
-        padding-top: 190px;
-        padding-bottom: 88px;
-        padding-right: 164px;
-    } */
 
     .day{
         padding-right: 125px;
