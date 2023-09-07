@@ -13,9 +13,11 @@
     background-color: #151515;
    }  
 
-   /* footer{
-    width: max-content;
-   } */
+ .heading{
+    line-height: 1.0;
+ }  
+
+
 @media screen and (max-width:480px){
    .heading{
         text-transform: uppercase;
@@ -64,11 +66,8 @@
         font-size: 16px;
         }
 
-   /* body{
-        background-color: #151515;
-    } */
-
-   .idle-button{
+    
+    .idle-button{
         background-color: #151515;
         text-transform: uppercase;
         color: white;
@@ -108,8 +107,6 @@
     .location-grid{
         grid-template-columns: 2fr;
     }
-
-    
 
     .location-grid div:nth-child(2){
         background-color:#151515;
@@ -156,13 +153,10 @@
        
     } 
 
-
-
     .socialmedia svg{
         height: 20px;
         width: 20px;
-        margin-right: 20px;
-        
+        margin-right: 20px;     
     }
 
     .socialmedia img:hover{
@@ -192,7 +186,13 @@
         background-image: url(./assets/mobile/image-hero.jpg);
         background-size: contain;
         height: 240px;
-       order: 1;
+        order: 1;
+       
+    }
+
+    .hero-text{
+        line-height: 1.0;
+        padding-bottom: 0px;
     }
 
     .bigbox-1{
@@ -205,8 +205,8 @@
     }
 
     .artsy{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 32px;
+        padding-bottom: 32px;
         
     }
 
@@ -214,6 +214,10 @@
         padding-left: 16px;
         padding-right: 16px;
         order: 3;
+    }
+
+    .wandery{
+        padding-top: 21px;
     }
 
     .location-button{
@@ -247,11 +251,9 @@
         cursor: pointer;
     }
 
-
-
     .grid-1{
         margin: 16px;
-        margin-top: 120px;
+        margin-top: 200px;
     }
 
     .box-2{
@@ -263,8 +265,11 @@
     .grid-2{
         margin: 16px;
     }
+
     .grid-3{
-        margin: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
         width:max-content;
     }
 
@@ -275,10 +280,10 @@
         padding: 24px;
         padding-top: 48px;
         padding-bottom: 47px;
-        /* margin-top: 16px; */
         margin-left: 16px;
         margin-right: 16px;
     }
+    
     .excited{
         padding-top: 24px;
     }
@@ -288,7 +293,7 @@
 
 
 
-@media screen and (max-width:1024px) and (min-width:500px){
+@media screen and (max-width:1024px) and (min-width:481px){
     .heading{
         text-transform: uppercase;
         font-family: 'Big Shoulders Display';
@@ -424,6 +429,7 @@
     .socialmedia{
         margin: 0;
         display: flex;
+        padding-top: 15px;
     } 
 
     .socialmedia svg{
@@ -464,12 +470,16 @@
         background-image: url(./assets/tablet/image-hero.jpg);
         background-position: left;
         background-repeat: no-repeat;
-        margin-bottom: 50px;
+        margin-bottom: 120px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         top: 0;
         height: 700px;
        
+    }
+
+    .wandery{
+        margin-bottom: 11px;
     }
 
     
@@ -522,22 +532,15 @@
         padding-top: 48px;
         padding-bottom: 48px;
         padding-right: 40px;
-        margin-top: 0;
+               
     }
 
-    /* .arts-location{
-        padding-top: 12px;
-    } */
-
-
-
-    
+        
     .day{
-        padding-right: 5rem;
-        padding-bottom: 2rem;
+        padding-right: 39px;
+        padding-bottom: 24px;
+        padding-top: 24px;
     }
-
-
     
     .box-2{
         background-color: #FFFFFF;
@@ -553,7 +556,6 @@
         flex-direction: row-reverse;
         margin-left: 40px;
         margin-right: 40px;
-        margin-bottom: 40px;
     }
 
     .box-3{
@@ -566,11 +568,16 @@
         padding-bottom: 50px;
         margin-left: 11px;
         margin-right: 40px;
+        margin-top: 11px;
+        
+    }
+
+    .grid-3{
+        margin-bottom: 0px;
     }
 
     .pic-3{
         margin-left: 11px;
-        margin-bottom: 11px;
         margin-right: 40px;
     }
 
@@ -580,7 +587,6 @@
         margin-left: 39px;
         margin-right: 40px;
         margin-bottom: 120px;
-        
     }
 
     .pic-2{
@@ -591,9 +597,8 @@
         padding-top: 18px;
     }
 
-
-
     }
+
 
 @media screen and (min-width:1025px){
     .heading{
@@ -746,6 +751,7 @@
     .socialmedia{
         /* margin: 0 0 0 35px; */
         display: flex;
+        padding-top: 20px;
     } 
 
     .socialmedia svg{
@@ -778,8 +784,8 @@
         color: #FFFFFF;
         justify-content: center;
         justify-items: center;
-        padding-left: 8rem;
-        padding-right: 10rem;
+        padding-left: 11rem;
+        padding-right: 22rem;
         align-items: center;
         margin-top: 2rem;
     }
@@ -799,7 +805,10 @@
         padding: 24px;
         border: 0 solid #151515;
         position: absolute;
-        
+        width: 204px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+                
     }
 
     .location-arrow{
@@ -855,6 +864,13 @@
         mix-blend-mode: difference;
         text-wrap: nowrap;       
     }
+/* 
+    .artsy{
+        width: 370px;
+        height: 160px;
+        margin-left: 40px;
+        
+    } */
 
     
 
@@ -862,23 +878,27 @@
         grid-column: 3 / 3;
         background-color: #FFFFFF;
         margin-top: 64px;
+        /* margin-left: 70px; */
     }
 
     .day{
-        padding-right: 125px;
         padding-bottom: 32px;
+        width: 350px;
     }
 
     .wandery{
-        padding-right: 125px;
         padding-bottom: 90px;
     }
 
+    .grid-1{
+        padding-left: 125px;
+    }
 
     
     .box-2{
         background-color: #FFFFFF;
         color:#151515;  
+        /* padding-right: 125px; */
     }
     
 
@@ -887,7 +907,7 @@
         display: flex;
         flex-direction: row-reverse;
         margin-left: 165px;
-        margin-right: 164px;
+        margin-right: 75px;
         margin-bottom: 11px;
     }
 
@@ -898,14 +918,15 @@
         padding-left: 48px;
         padding-right: 47px;
         grid-column: 2 / 3;
-        padding-top: 65px;
-        padding-bottom: 64px;
+        padding-top: 70px;
+        padding-bottom: 69px;
         margin-left: 30px;
+
     }
 
     .pic-3{
         margin-left: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 
     .bigbox-3{
@@ -922,7 +943,7 @@
     }
 
     .excited{
-        padding-top: 32px;
+        padding-top: 35px;
     }
 
 
