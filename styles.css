@@ -191,8 +191,8 @@
     }
 
     .hero-text{
+        padding-top: 32px;
         line-height: 1.0;
-        padding-bottom: 0px;
     }
 
     .bigbox-1{
@@ -229,6 +229,9 @@
         padding: 24px;
         border: 0 solid #151515;
         position: absolute;
+        width: 204px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
         
     }
 
@@ -237,7 +240,7 @@
         padding: 24px;
         position: absolute;
         bottom: 0px;
-        left: 150px;   
+        left: 200px;   
     }
 
     .location-button:hover, .location-button:active{
@@ -340,10 +343,6 @@
     .tiny{
         font-size: 16px;
     }
-
-    /* body{
-        background-color: #151515 
-    } */
 
     .idle-button{
         background-color: #151515;
@@ -461,8 +460,8 @@
 
     .foot{
         color: #FFFFFF;
-        padding-left: 4rem;
-        padding-right: 5rem;
+        padding-left: 6rem;
+        padding-right: 9rem;
         padding-top: 1rem;
     }
 
@@ -493,6 +492,9 @@
         border: 0 solid #151515;
         margin-bottom: 5rem;
         position: absolute;
+        width: 204px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
         
     }
 
@@ -648,10 +650,6 @@
         font-size: 18px;
     }
 
-    /* body{
-        background-color: #151515;
-        
-    } */
     .idle-button{
         background-color: #151515;
         border: 0 solid #151515;
@@ -749,7 +747,6 @@
     }
 
     .socialmedia{
-        /* margin: 0 0 0 35px; */
         display: flex;
         padding-top: 20px;
     } 
@@ -758,7 +755,6 @@
         height: 20px;
         width: 20px;
         margin-right: 20px;
-        /* padding-top: 1rem; */
     }
 
     .socialmedia img:hover{
@@ -864,21 +860,12 @@
         mix-blend-mode: difference;
         text-wrap: nowrap;       
     }
-/* 
-    .artsy{
-        width: 370px;
-        height: 160px;
-        margin-left: 40px;
-        
-    } */
-
-    
+   
 
     .location{
         grid-column: 3 / 3;
         background-color: #FFFFFF;
         margin-top: 64px;
-        /* margin-left: 70px; */
     }
 
     .day{
@@ -898,9 +885,7 @@
     .box-2{
         background-color: #FFFFFF;
         color:#151515;  
-        /* padding-right: 125px; */
-    }
-    
+    }    
 
     .bigbox-2{
         background-color:#FFFFFF;
