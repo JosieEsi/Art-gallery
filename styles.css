@@ -151,6 +151,10 @@
     .tags{
         margin: 5px 0 0 -30px;
         display: flex;
+    } 
+
+    .tags svg path:hover{
+        fill:#FFFFFF;
        
     } 
 
@@ -165,7 +169,7 @@
     }
 
     svg path:hover{
-        fill:#FFFFFF;
+        fill:#D5966C;
         cursor: pointer;
         transition: background 500ms ease;
     }
@@ -427,6 +431,11 @@
         padding-top: 2rem;
     }
 
+    .tags svg path:hover{
+        fill:#FFFFFF;
+       
+    } 
+
     
     .socialmedia{
         margin: 0;
@@ -561,6 +570,7 @@
         flex-direction: row-reverse;
         margin-left: 40px;
         margin-right: 40px;
+        justify-content: center;
     }
 
     .box-3{
@@ -744,6 +754,11 @@
         margin-top: 2rem;
     }
 
+    .tags svg path:hover{
+        fill:#FFFFFF;
+       
+    } 
+
     .socialmedia{
         display: flex;
         padding-top: 20px;
@@ -757,10 +772,12 @@
 
     .socialmedia img:hover{
         cursor: pointer;
+        
+        
     }
 
     svg path:hover{
-        fill:#FFFFFF;
+        fill:#D5966C;
         cursor: pointer;
         transition: background 500ms ease;
     }
@@ -785,8 +802,9 @@
     }
   
     .arts-location{
-        padding-right: 164px;
+        padding-right: 135px;
         padding-top: 189px;
+        height: 160px;
     }
 
     
@@ -835,7 +853,7 @@
         background-position:center;
         background-repeat: no-repeat;
         top: 0;
-        
+        width: 1440px;
               
     }
 
@@ -875,24 +893,31 @@
         padding-bottom: 90px;
     }
 
-    .grid-1{
-        padding-left: 125px;
-    }
-
-    
-    .box-2{
-        background-color: #FFFFFF;
-        color:#151515;  
-    }    
 
     .bigbox-2{
         background-color:#FFFFFF;
         display: flex;
         flex-direction: row-reverse;
         margin-left: 165px;
-        margin-right: 75px;
+        margin-right: 90px;
         margin-bottom: 11px;
+        width: 1110px;
+        height: 400px;
+        
+       
     }
+
+    .box-2{
+        background-color: #FFFFFF;
+        color:#151515;  
+        width: 350px;
+       
+    }   
+
+    .grid-1{
+        padding-left: 125px;
+             
+     }
 
     .box-3{
         background-color: #151515;
