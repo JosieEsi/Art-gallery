@@ -438,16 +438,13 @@
 
     
     .socialmedia{
-        margin: 0;
         display: flex;
-        padding-top: 15px;
+        gap: 1rem;
     } 
 
     .socialmedia svg{
         height: 20px;
-        width: 20px;
-        margin-right: 20px;
-        
+        width: 20px;    
     }
 
     .socialmedia img:hover{
@@ -463,18 +460,18 @@
     footer{
         background-color: #151515;
         display: flex;
-        justify-content: space-between;
-        padding: 2rem;
-        padding-top: 1rem;
-        padding-right: 0.2rem;
-        
+        /* justify-content: space-between; */
+        padding-top: 56px;
+        padding-bottom: 56px;
+        padding-left: 39px;
+        padding-right: 40px;   
     }
 
     .foot{
         color: #FFFFFF;
         padding-left: 6rem;
-        padding-right: 9rem;
-        padding-top: 1rem;
+        padding-right: 8rem;
+            
     }
 
     .bigbox-1{
@@ -761,19 +758,20 @@
 
     .socialmedia{
         display: flex;
-        padding-top: 20px;
+       gap:1rem;
+       
+        
     } 
 
     .socialmedia svg{
         height: 20px;
         width: 20px;
-        margin-right: 20px;
+        
     }
 
     .socialmedia img:hover{
         cursor: pointer;
-        
-        
+     
     }
 
     svg path:hover{
@@ -786,19 +784,19 @@
         background-color: #151515;
         display: flex;
         justify-content: space-between;
-        padding: 3rem;
-        padding-left: 120px;
-        
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 165px;
+        padding-right: 165px;
     }
 
     .foot{
         color: #FFFFFF;
         justify-content: center;
         justify-items: center;
-        padding-left: 11rem;
-        padding-right: 22rem;
+        padding-left: 10rem;
+        padding-right: 17rem;
         align-items: center;
-        margin-top: 2rem;
     }
   
     .arts-location{
